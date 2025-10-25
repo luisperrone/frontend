@@ -1,2 +1,3 @@
-# frontend
-HTML, CSS, JS proyects
+# Shiphero Manual
+
+This help page is made with HTML and JS
