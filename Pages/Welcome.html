@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiphero Manual</title>
+    <link rel="stylesheet" href="../css/Welcome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <h1 id="titulo">Shiphero Manual</h1>
+            <img class="logo-img" src="../Media/Shiphero logo.png" alt="Shiphero Logo" width="200">
+        </div>
+        <nav class="menu">
+            <ul class="links-list">
+                <li>
+                    <a class="link" href="#introduction">Introduction</a>
+                </li>
+                <li>
+                    <a class="link" href="#categories">Flag categories</a>
+                </li>
+                <li>
+                    <a class="link" href="#flags">Flag items</a>
+                </li>
+                <li>
+                    <a class="link" href="#collaborate">Collaborate</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <section>
+            <h2 class="introduction" id="introduction">Welcome to the Shiphero Flags Manual</h2>
+            <p>This manual provides comprehensive information about using Shiphero effectively. Explore the sections to
+                learn more about its features and functionalities.</p>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section class="flag-container">
+            <h2 class="flag-cat" id="categories">Flag Categories</h2>
+            <p>Here you will find the main Shiphero categories</p>
+            <div class="flag-cat-container">
+        <div class="flag-box">
+          <a href="#account-flags-list">
+            <div class="flag-title">
+              Account flags
+            </div>
+          </a>
+        </div>
+        <div class="flag-box">
+          <a href="#lvk-flags-list">
+            <div class="flag-title">
+              LVK <br> flags
+            </div>
+          </a>
+        </div>
+        <div class="flag-box">
+          <a href="#carrier-flags-list">
+            <div class="flag-title">
+              Carrier flags
+            </div>
+          </a>
+        </div>
+        <div class="flag-box">
+          <a href="#store-flags-list">
+            <div class="flag-title">
+              Store <br> flags
+            </div>
+          </a>
+        </div>
+        <div class="flag-box">
+          <a href="#mobile-flags-list">
+            <div class="flag-title">
+              Mobile flags
+            </div>
+          </a>
+        </div>
+        <div class="flag-box">
+          <a href="#shipping-flags-list">
+            <div class="flag-title">
+              Shipping flags
+            </div>
+          </a>
+        </div>
+      </div>
+        </section>
+        <section>
+        <h2 id="flags">Flag items</h2>
+        <h3 id="account-flags-list">Account Flags</h3>
+        <p>(Your 'Account flags' information goes here)...</p>
+        <br>
+        <a href="#categories">Back to categories</a> <hr>
+
+        <h3 id="lvk-flags-list">LVK Flags</h3>
+        <a href="#categories">Back to categories</a> <hr>
+
+        <h3 id="carrier-flags-list">Carrier Flags</h3>
+
+        <div class="flag-definition-box">
+          <h4 class="flag-item-name">fedex_save_cost_breakdown</h4>
+          <div class="flag-item-details">
+            <h5>What it does</h5>
+            <p>Saves the detailed cost breakdown (including shipping zone) that is returned from the FedEx carrier response.</p>
+            
+            <h5>UI / System Impact</h5>
+            <ul>
+              <li><strong>Location:</strong> SF Shipments Report</li>
+              <li><strong>Without Flag:</strong> The 'Zone' column for FedEx shipments shows 'NULL'.</li>
+              <li><strong>With Flag:</strong> The 'Zone' column correctly displays the shipping zone (e.g., "Zone 2", "Zone 8").</li>
+            </ul>
+          </div>
+        </div>
+        
+        <br>
+        <a href="#categorias">Back to categories</a>
+        <hr>
+        
+        <div class="flag-definition-box">
+          </div>
+        
+        <br>
+        <a href="#categories">Back to categories</a> <hr>
+
+<h3 id="shipping-flags-list">Shipping Flags</h3>
+
+        <div class="flag-definition-box">
+          <h4 class="flag-item-name">appsync_app</h4>
+          <div class="flag-item-details">
+            <h5>What it does</h5>
+            <p>Switches the communication system for workstation printing between the modern (AppSync) and legacy (Pusher) methods.</p>
+            
+            <h5>UI / System Impact</h5>
+            <ul>
+              <li><strong>With Flag (Enabled):</strong> Uses the modern **AppSync** system. This is faster and more secure.</li>
+              <li><strong>Without Flag (Disabled):</strong> Uses the legacy **Pusher** system, which is older but supports all workstation app versions.</li>
+            </ul>
+            <p><strong>CRITICAL:</strong> When the flag is enabled, printing will <strong>fail silently</strong> if the workstation is not properly configured (e.g., missing a `computer_id`). The user will click print, nothing will happen, and no error message will be shown.</p>
+          </div>
+        </div>
+
+        <br>
+        <a href="#categories">Back to categories</a>
+        <br>
+        <br>
+
+      </section>        <a href="#categories">Back to categories</a> <hr>
+
+        <h3 id="mobile-flags-list">Mobile Flags</h3>
+        <a href="#categories">Back to categories</a> <hr>
+
+        <h3 id="shipping-flags-list">Shipping Flags</h3>
+        <a href="#categories">Back to categories</a> <br>
+        <br>
+      </section>
+        <br>
+        <br>
+        <section>
+            <h2 id="collaborate">Collaborate</h2>
+            <p>Tell us what could be added to this page to keep the manual updated.</p>
+            <section>
+                <section>
+
+                    <form class="form" action="https://formspree.io/f/xvgwwlzl" method="POST">
+                        <fieldset class="fields">
+                            <legend>Personal Information </legend>
+                            <label>
+                                Your email:
+                                <input type="email" name="email">
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="flags"><b>Flags:</b></label>
+                            <select id="motivo" name="motivo">
+                                <option value="">-- Select an option --</option>
+                                <option value="account-flags">Account flags</option>
+                                <option value="LVK-flags">LVK flags</option>
+                                <option value="store-flags">Store flags</option>
+                                <option value="mobile-flags">Mobile flags</option>
+                                <option value="shipping-flags">Shipping flags</option>
+                            </select>
+
+                        </fieldset>
+                        <fieldset>
+                            <label>
+                                Your message:
+                                <textarea name="message"></textarea>
+                            </label>
+                            <!-- your other form fields go here -->
+                            <button type="submit">Send</button>
+                        </fieldset>
+                    </form>
+                </section>
+            </section>
+            <h3>Replenishment feature</h3>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/-bg_3ijGY1Q?si=iMGSNzE34xBWU3RY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div>
+            <h5>https://fulfillment-help.lvk.com/hc/en-us</h5>
+            <h5>https://software-help.shiphero.com/hc/en-us</h5>
+            <h5>https://shiphero.atlassian.net/wiki/spaces/CS/overview</h5>
+        </div>
+        <div class="redes">
+            <a href="https://www.instagram.com/">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://www.tiktok.com/es-419/">
+                <i class="fa-brands fa-tiktok fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-whatsapp fa-2x"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

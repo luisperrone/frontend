@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+.logo-container {
+    text-align: center;
+}
+.logo-img {
+    width: 200px;
+    height: 60px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+}
+
+.links-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    font-family: 'Changa One';
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+/* MAIN */
+
+.main-container {
+    
+    align-items: center;
+    padding: 30px;
+    font-family: 'Montserrat', Arial, sans-serif; 
+}
+.introduction {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+}
+.flag-container {
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+.flag-cat {
+    font-family: 'Changa One';
+    font-weight: lighter;
+    font-size: 30px;
+    margin-bottom: 10px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+}
+.flag-cat-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 30px;
+    
+}
+.flag-item {
+    width: 80px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.item-title {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.flag-box {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 79px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.flag-title {
+    width: 490px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 19px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+.flag-title:hover {
+    background-color: #f5f5f5;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .links-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .introduction {
+        font-size: 30px;
+    }
+    .flag-cat {
+        font-size: 24px;
+    }
+    .flag-box {
+        font-size: 40px;
+    }
+    .flag-title {
+        width: 100%;
+    }
+}
+.fields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+    border: none;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: darkgray;
+    border-radius: 2%;
+    border: 2px solid rgb(161, 157, 157);
+    margin: auto;
+}
+.footer {
+    display: flex;
+    text-align: left;
+    padding: 20px;
+    background-color: #f2f2f2;
+    margin-top: 30px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    justify-content: space-between;
+}
+.flag-box a {
+  text-decoration: none;
+  color: inherit;
+}
+.flag-definition-box {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.flag-item-name {
+  font-family: 'Changa One', sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+  background-color: #f2f2f2;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.flag-item-details {
+  padding: 20px;
+}
+
+.flag-item-details h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.flag-item-details p,
+.flag-item-details li {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.flag-item-details ul {
+  list-style-position: inside;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
